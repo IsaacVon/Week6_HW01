@@ -1,3 +1,5 @@
+const courses = require('~/') // how to get to file?
+
 var $noteTitle = $(".note-title");
 var $noteText = $(".note-textarea");
 var $saveNoteBtn = $(".save-note");
@@ -141,3 +143,6 @@ $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
+
+
+app.listen(3000, () => console.log('listening on port 3000'))
